@@ -1,0 +1,35 @@
+
+
+name: "张三"
+person:
+  name: "${name}"
+  age: 99
+server:
+  port: 9090
+---
+
+server:
+  port: 8081
+spring:
+  profiles: dev
+---
+
+server:
+  port: 8082
+spring:
+  profiles:
+    active: test
+---
+
+server:
+  port: 8083
+spring:
+  config:
+    activate:
+      on-profile: pro
+
+---
+
+#spring:
+#  profiles:
+#    active: pro
