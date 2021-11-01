@@ -4,6 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.util.ArrayList;
+
 @SpringBootApplication
 public class SpringbootConditionApplication {
 
@@ -13,7 +15,7 @@ public class SpringbootConditionApplication {
 //        Object redisTemplate = context.getBean("redisTemplate");
 //        System.out.println(redisTemplate);
 
-        Object user = context.getBean("user");
+        Object user = context.getBean("user2");
         System.out.println(user);
     }
 
