@@ -1,6 +1,22 @@
 ## Java Spring-boot 学习进度
 [黑马程序员SpringBoot教程，6小时快速入门Java微服务架构Spring Boot](https://www.bilibili.com/video/BV1Lq4y1J77x?p=18)
 
+## 相关命令
+```shell
+# 命令行运行
+ ./mvnw spring-boot:run 
+```
+
+```shell
+# 打包 jar 包
+./mvnw clean package
+# 运行 jar 包
+java -jar target/demo-0.0.1-SNAPSHOT.jar
+# 切换环境
+java -jar target/demo-0.0.1-SNAPSHOT.jar --spring.profiles.active=pro
+ 
+```
+
 ## Springboot 高级-配置
 
 - Condition
@@ -121,7 +137,9 @@ Client 向 Server 注册监听
 3. 配置相关信息：server 地址等
 4. 启动 server 和 client 服务，访问 server
 
-
+## 部署
+1. jar 包（官方推荐）
+2. war 包 - 需要外部的 tomcat 服务器
 
 
 
