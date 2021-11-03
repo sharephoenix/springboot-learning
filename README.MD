@@ -69,7 +69,24 @@
 
 ## Springboot 监听机制
 
-Springboot 在项目启动时，会对几个监听器进行毁掉，我们可以实现这些监听的接口
+- Springboot 在项目启动时，会对几个监听器进行毁掉，我们可以实现这些监听的接口
+一下两种需要在 META-INF/spring.factories 中配置后使用
+```properties
+<!-- resources/META-INF/spring.factories -->
+org.springframework.context.ApplicationContextInitializer=\
+  c
+
+```
+ApplicationContextInitializer
+SpringApplicationRunListener
+
+以下两个不需要配置就可以获取到
+CommandLineRunner
+ApplicationRunner
+//        用缓存，将数据库的信息从数据库中读取到 redis 中（缓存预热）
+//        一般和 CommandLineRunner 只用其中的一个
+
+
 
 
 
