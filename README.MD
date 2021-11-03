@@ -71,11 +71,10 @@
 
 - Springboot 在项目启动时，会对几个监听器进行毁掉，我们可以实现这些监听的接口
 一下两种需要在 META-INF/spring.factories 中配置后使用
-```properties
+```properties`
 <!-- resources/META-INF/spring.factories -->
-org.springframework.context.ApplicationContextInitializer=\
-  c
-
+org.springframework.boot.SpringApplicationRunListener=\
+  com.huntaway.springbootlistener.listener.MySpringApplicationRunListener
 ```
 ApplicationContextInitializer
 SpringApplicationRunListener
@@ -85,6 +84,24 @@ CommandLineRunner
 ApplicationRunner
 //        用缓存，将数据库的信息从数据库中读取到 redis 中（缓存预热）
 //        一般和 CommandLineRunner 只用其中的一个
+
+
+## Springboot 原理分析
+
+- spring 加载全过程
+
+## Springboot 监控 Actuator
+
+实现程序内部运行情况的监控，比如监控状况/Bean加载情况/配置属性/日志信息
+```
+<!-- application.properties -->
+
+#开启健康检查的完整信息
+management.endpoint.health.show-details=always
+#所有的监控 endpoint（url） 暴露
+management.endpoints.web.exposure.include=*
+
+```
 
 
 
