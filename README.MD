@@ -103,6 +103,27 @@ management.endpoints.web.exposure.include=*
 
 ```
 
+## SpringBoot-Admin
+-  图形话的方式查看监控信息
+Client：想要被监控的 Spring 项目；
+Server：接收 Client 内的信息，提供 UI 界面查看；
+Client 向 Server 注册监听
+
+* 底层原理还是 Actuator Endpoint
+> admin-server
+1. 创建 admin-server 模块
+2. 导入依赖坐标 admin-starter-server
+3. 在引导类上启用监控功能 @EnableAdminServer
+
+> admin-client
+1. 创建 admin-client 模块
+2. 引入 admin-starter-client
+3. 配置相关信息：server 地址等
+4. 启动 server 和 client 服务，访问 server
+
+
+
+
 
 
 
