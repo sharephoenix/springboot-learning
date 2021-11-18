@@ -142,6 +142,10 @@ Client 向 Server 注册监听
 2. war 包 - 需要外部的 tomcat 服务器
 
 
+/Users/phoenix/IdeaProjects/springboot-admin-client/springboot-deploy/target/springboot-deploy-0.0.1-SNAPSHOT.jar
+[INFO] 
+
+
 
 
 
