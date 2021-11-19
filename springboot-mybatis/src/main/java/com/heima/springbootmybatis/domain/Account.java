@@ -7,6 +7,8 @@ public class Account {
     private String pwd;
     private String description;
 
+    private String desc;
+
     public long getId() {
         return id;
     }
@@ -47,6 +49,14 @@ public class Account {
         this.description = description;
     }
 
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
@@ -55,6 +65,7 @@ public class Account {
                 ", account='" + account + '\'' +
                 ", pwd='" + pwd + '\'' +
                 ", description='" + description + '\'' +
+                ", desc='" + desc + '\'' +
                 '}';
     }
 }

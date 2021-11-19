@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface AccountMapper {
 
-    @Select("select * from account")
+    @Select("select u.account, p.desc from Account_DB.account as u left join pingyin.pingyin as p on u.id=p.id where p.id=1")
     public List<Account> findAll();
 }

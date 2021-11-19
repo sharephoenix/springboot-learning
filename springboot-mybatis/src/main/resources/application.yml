@@ -4,11 +4,11 @@ spring:
     username: root
     password: qwer1234
     driver-class-name: com.mysql.cj.jdbc.Driver
-  second-datasource:
-    url: jdbc:mysql:///Account_DB?serverTimezone=UTC&useSSL=false&characterEncoding=utf-8
-    username: root
-    password: qwer1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#  second-datasource:
+#    url: jdbc:mysql:///Account_DB?serverTimezone=UTC&useSSL=false&characterEncoding=utf-8
+#    username: root
+#    password: qwer1234
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 
 # mybatis
 mybatis:
