@@ -20,7 +20,6 @@ public class DeptController {
 
     @RequestMapping(path = "/dept/get/{id}", method = RequestMethod.GET)
     public Dept queryById(@PathVariable("id") Long id) {
-        System.out.println("xxxxxxxxx:" + id);
         return deptService.queryById(id);
     }
 
