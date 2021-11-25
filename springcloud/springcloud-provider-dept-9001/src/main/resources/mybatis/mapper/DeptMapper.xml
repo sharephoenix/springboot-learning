@@ -6,7 +6,7 @@
         insert into dept (dname, db_source) values (#{dname}, DATABASE());
     </insert>
     <select id="queryById" parameterType="Long" resultType="Dept">
-        select * from dept where id=#{deptno};
+        select * from dept where deptno=#{deptno};
     </select>
     <select id="queryAll" resultType="Dept">
         select * from dept;
