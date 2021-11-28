@@ -4,8 +4,11 @@ server:
 eureka:
   instance:
     hostname: localhost # Eureka 服务端实例名称
+    prefer-ip-address: true
   client:
     register-with-eureka: false # 是否向 eureka 服务中心注册自己
     fetch-registry: false # 如果为 false 则表示自己为注册中心
     service-url: # 监控页面，可以在浏览器中打开这个链接
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+# http://localhost:7001/eureka/

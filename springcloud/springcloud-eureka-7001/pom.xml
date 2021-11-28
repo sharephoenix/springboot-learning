@@ -13,8 +13,9 @@
     <artifactId>springcloud-eureka-7001</artifactId>
 
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
 <!--    倒入 Eureka 包-->
@@ -22,17 +23,32 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
+<!--            <version>1.4.4.RELEASE</version>-->
+<!--            <version>1.4.6.RELEASE</version>-->
             <version>1.4.6.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
+<!--&lt;!&ndash;            <version>2.2.2.RELEASEE</version>&ndash;&gt;-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+<!--            <version>2.3.11.RELEASE</version>-->
+<!--            <version>2.2.0.RELEASE</version>-->
         </dependency>
 <!--        热部署工具-->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->
 <!--            <artifactId>spring-boot-devtools</artifactId>-->
-<!--            <version>2.5.6</version>-->
+<!--&lt;!&ndash;            <version>2.1.4.RELEASE</version>&ndash;&gt;-->
 <!--        </dependency>-->
+
     </dependencies>
 </project>
