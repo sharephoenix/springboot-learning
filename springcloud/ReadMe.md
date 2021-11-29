@@ -7,3 +7,7 @@
 
 ## Eureka
 * Eureka 是 Netflix 的子模块
+
+## Ribbon 
+* 用于负载均衡 
+* Feign 基于 web services 调用；面向接口编程
