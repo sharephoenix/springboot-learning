@@ -6,15 +6,12 @@
         <artifactId>springcloud</artifactId>
         <groupId>cn.huntaway</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-provider-dept-9001</artifactId>
+    <artifactId>springcloud-provider-dept-9003</artifactId>
 
     <properties>
-        <java.version>1.8</java.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
@@ -62,7 +59,7 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
         </dependency>
-<!--        完善监控信息-->
+        <!--        完善监控信息-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -70,10 +67,10 @@
         </dependency>
 
         <!--        test-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-test</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-test</artifactId>-->
+        <!--        </dependency>-->
 
         <!--        热部署工具-->
         <dependency>

@@ -1,5 +1,5 @@
 server:
-  port: 9001
+  port: 9003
 
 mybatis:
   type-aliases-package: cn.huntaway.projo
@@ -12,7 +12,7 @@ spring:
   datasource:
 #    type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/db03?useUnicode=true&characterEncoding=utf-8
     username: root
     password: qwer1234
 
@@ -25,4 +25,4 @@ eureka:
     service-url: # 监控页面，可以在浏览器中打开这个链接
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: pringcloud-privider-8001-id # 修改 eureka 默认描述信息
+    instance-id: pringcloud-privider-8003-id # 修改 eureka 默认描述信息

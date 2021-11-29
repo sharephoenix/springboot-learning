@@ -11,6 +11,7 @@ public class ConfigBean {
     @Bean
     @LoadBalanced // Ribbon
     public RestTemplate getRestTemplate() {
+        System.out.println("getRestTemplate");
         return new RestTemplate();
     }
 }
