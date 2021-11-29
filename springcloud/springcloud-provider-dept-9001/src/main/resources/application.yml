@@ -16,7 +16,13 @@ spring:
     username: root
     password: qwer1234
 
+info:
+  app.name: cn.huntaway/client/info/name
+  company.name: hutaway.company
+
 eureka:
   client:
     service-url: # 监控页面，可以在浏览器中打开这个链接
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+  instance:
+    instance-id: pringcloud-privider-8001-id-s # 修改 eureka 默认描述信息

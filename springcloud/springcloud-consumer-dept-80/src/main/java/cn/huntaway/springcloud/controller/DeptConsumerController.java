@@ -1,7 +1,9 @@
-package cn.huntaway.springcloud.config;
+package cn.huntaway.springcloud.controller;
 
 import cn.huntaway.projo.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -14,8 +16,9 @@ public class DeptConsumerController {
     // RestTemplate ... 供我们直接调用就可以了！注册到 spring 中
     // （url, 实体：Map，Class<T> responseType）
 
-    private static final String REST_URL_PREFIX = "http://localhost:9001";
-
+    // 通过 rabbon 去实现的时候我们这边的地址应该是一个变量，即：服务名称
+//    private static final String REST_URL_PREFIX = "http://localhost:9001";
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
     @Autowired
     private RestTemplate restTemplate; // 提供多种便捷访问远程 http 服务的方法，简单的 Restful 服务模版～
 

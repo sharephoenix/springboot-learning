@@ -1,5 +1,5 @@
 server:
-  port: 7001
+  port: 7002
 
 eureka:
   instance:
@@ -11,6 +11,6 @@ eureka:
     service-url: # 监控页面，可以在浏览器中打开这个链接
       # 单机：defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # 集群（关联）：defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-      defaultZone: http://${eureka.instance.hostname}:7002/eureka/,http://${eureka.instance.hostname}:7003/eureka/
+      defaultZone: http://${eureka.instance.hostname}:7001/eureka/,http://${eureka.instance.hostname}:7003/eureka/
 
 # http://localhost:7001/eureka/
