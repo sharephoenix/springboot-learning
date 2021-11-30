@@ -11,3 +11,6 @@
 ## Ribbon 
 * 用于负载均衡 
 * Feign 基于 web services 调用；面向接口编程
+
+## Hystrix 
+* 功能：服务熔断 服务降级 流量监控
